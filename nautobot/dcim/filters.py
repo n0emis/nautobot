@@ -888,6 +888,10 @@ class DeviceFilterSet(
                 "lookup_expr": "icontains",
                 "preprocessor": str.strip,
             },
+            "inventoryitems__asset_tag": {
+                "lookup_expr": "icontains",
+                "preprocessor": str.strip,
+            },
             "comments": "icontains",
         },
     )
